@@ -1,0 +1,11 @@
+targets:
+  $default:
+    builders:
+      json_serializable:
+        options:
+          any_map: true
+      swagger_dart_code_generator:
+        options:
+          input_folder: "lib/domain/api_specs/"
+          output_folder: "lib/domain/api_generated_code/"
+          separate_models: true
